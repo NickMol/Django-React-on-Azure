@@ -24,6 +24,7 @@ jobs:
 
       - name: Create and start virtual environment
         run: |
+          cd BACKEND
           python -m venv venv
           source venv/bin/activate
       
@@ -42,7 +43,7 @@ jobs:
         with:
           name: python-app
           path: |
-            . 
+            ./BACKEND/ 
             !venv/
 
   deploy:
