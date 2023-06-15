@@ -7,6 +7,7 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
+import { Menu } from './Menu';
 
 const drawerWidth = 220;
 function Navbar(props) {
@@ -17,11 +18,10 @@ function Navbar(props) {
     setMobileOpen(!mobileOpen);
   };
 
-
   const drawer = (
     <div>
       <Toolbar />
-      
+       <Menu/>
     </div>
   );
 
