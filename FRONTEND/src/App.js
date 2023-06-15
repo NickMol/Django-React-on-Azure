@@ -5,7 +5,7 @@ import NavbarHolder from "./components/NavbarHolder"
 import Home from "./components/Home"
 import About from './components/About'
 import Contact from './components/Contact';
-import {Route, Routes, useLocation} from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 
 function App() {
   return (

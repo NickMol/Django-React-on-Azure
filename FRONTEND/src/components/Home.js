@@ -1,7 +1,6 @@
 import React, {useState, useEffect, useMemo} from 'react';
 import MaterialReactTable from 'material-react-table';
 import axiosInstance from './Axios';
-import { Box, Grid } from '@mui/material';
 
 const Home = () => {
     const [clubs, setClubs] = useState()
