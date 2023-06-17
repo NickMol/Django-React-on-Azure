@@ -38,8 +38,9 @@ const Home = () => {
 
   return (      
     <div> 
-        {loading ? <p>Loading...</p> :
 
+        {loading ? <p>Loading...</p> :
+            
             <MaterialReactTable 
                 columns={columns} 
                 data={clubs} />

@@ -12,5 +12,5 @@ class ClubList(viewsets.ViewSet):
    queryset = Clubs.objects.all()
 
    def list(self,request): 
-      serializer = ClubSerializer(self.queryset, many=True)
+      serializer = ClubSerializer(Clubs.objects.all(), many=True)
       return Response(serializer.data)

@@ -21,14 +21,14 @@ export const Menu = () => {
           <ListItemText primary={"Home"} />
         </ListItem>
 
-        <ListItem component={Link} to='/about' button key={"1"} selected={'/about' === path}>
+        <ListItem component={Link} to='/about' button key={"2"} selected={'/about' === path}>
           <ListItemIcon>
             <AddBoxIcon />
           </ListItemIcon>
           <ListItemText primary={"About"} />
         </ListItem>
 
-        <ListItem component={Link} to='/contact' button key={"1"} selected={'/contact' === path}>
+        <ListItem component={Link} to='/contact' button key={"3"} selected={'/contact' === path}>
           <ListItemIcon>
             <TableRowsIcon />
           </ListItemIcon>

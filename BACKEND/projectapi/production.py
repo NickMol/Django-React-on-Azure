@@ -6,10 +6,6 @@ from .settings import BASE_DIR
 # that Azure automatically creates for us.
 
 
-CORS_ALLOWED_ORIGINS = [
-    "https://wonderful-glacier-003a1eb03.3.azurestaticapps.net",
-]
-
 ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']] if 'WEBSITE_HOSTNAME' in os.environ else []
 CSRF_TRUSTED_ORIGINS = ['https://' + os.environ['WEBSITE_HOSTNAME']] if 'WEBSITE_HOSTNAME' in os.environ else []
 DEBUG = True
@@ -26,6 +22,12 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+
+CORS_ALLOWED_ORIGINS = [
+    "https://wonderful-glacier-003a1eb03.3.azurestaticapps.net",
+]
+
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
